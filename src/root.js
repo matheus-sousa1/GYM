@@ -37,6 +37,9 @@ export default function Root() {
             <li>
               <Link to={`/contacts/2`}>Your Friend</Link>
             </li>
+            <li>
+              <Link to={`/appointment/1`}>Appointment</Link>
+            </li>
           </ul>
         </nav>
       </div>
