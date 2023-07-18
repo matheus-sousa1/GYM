@@ -4,7 +4,7 @@ import ErrorPage from "./error-page";
 import Appointment from "./components/pages/appointment";
 import Home from "./home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Contact from "./components/pages/contact";
+import Activities from "./components/pages/activities";
 import About from "./components/pages/about";
 import Plans from "./components/pages/plans";
 
@@ -19,8 +19,8 @@ const router = createBrowserRouter([
     element: <Appointment />,
   },
   {
-    path: "contact",
-    element: <Contact />,
+    path: "activities",
+    element: <Activities />,
   },
   {
     path: "about",

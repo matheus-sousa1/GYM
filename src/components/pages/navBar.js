@@ -8,10 +8,10 @@ function NavBar() {
         Gym
       </div>
       <nav>
-      <Link to="appointment">Appointment</Link>
-      <Link to="contact">Contact</Link>
-      <Link to="about">About</Link>
-      <Link to="plans">Plans</Link>
+      <Link to="appointment">Agendamento</Link>
+      <Link to="activities">Atividades</Link>
+      <Link to="about">Sobre</Link>
+      <Link to="plans">Planos</Link>
       </nav>
     </header>
   )
