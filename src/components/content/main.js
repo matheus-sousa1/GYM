@@ -2,12 +2,23 @@ import React from 'react';
 import man from '../../img/man.jpeg';
 import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaYoutube, FaInstagram, FaTwitter   } from "react-icons/fa";
+import "./main.css";
 
 function Main() {
   return (
-    <div className='container'>
+    <div className="container">
      <main>
-      <h2>introdução</h2>
+        <h2 className="info-gym">
+        Bem-vindo ao Gym, uma academia que está
+        comprometida em transformar o seu corpo 
+        e melhorar a sua saúde de maneira 
+        abrangente e sustentável. Nossa academia
+        é mais do que apenas um local para 
+        exercícios, é um ambiente motivador e 
+        acolhedor, projetado para ajudá-lo a 
+        atingir seus objetivos de treinamento 
+        físico de maneira eficaz e divertida. 
+        </h2>
       <img src={man} alt="man"/>
      </main>
      <section className='enroll'>
