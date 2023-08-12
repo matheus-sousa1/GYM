@@ -21,8 +21,12 @@ function Main() {
         </h2>
       <img src={man} alt="man"/>
      </main>
-     <section className='enroll'>
+     <section className='enroll-content'>
+      <div className='enroll'>
+        <h5>R$30,50</h5>
+        <p>no primeiro mês</p>
       <Link to="plans">Matricule-se</Link>
+      </div>
      </section>
      <section className='gym-video'>
      <video width="320" height="240" controls>
