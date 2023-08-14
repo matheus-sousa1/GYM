@@ -1,5 +1,6 @@
 import React from 'react';
 import man from '../../img/man.jpeg';
+import enroll from '../../img/enroll.png';
 import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaYoutube, FaInstagram, FaTwitter   } from "react-icons/fa";
 import "./main.css";
@@ -22,10 +23,14 @@ function Main() {
       <img src={man} alt="man"/>
      </main>
      <section className='enroll-content'>
-      <div className='enroll'>
+     <h3 className="force">#FOCO</h3>
+      <div className="enroll">
+      <img src={enroll} alt="enroll-image" />
+      <div className='enroll-text'>
         <h5>R$30,50</h5>
         <p>no primeiro mês</p>
-      <Link to="plans">Matricule-se</Link>
+      <Link className="button-enroll" to="plans">Matricule-se</Link>
+      </div>
       </div>
      </section>
      <section className='gym-video'>
