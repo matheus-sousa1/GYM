@@ -1,6 +1,7 @@
 import React from 'react';
 import man from '../../img/man.jpeg';
 import enroll from '../../img/enroll.png';
+import method from '../../img/method.mp4';
 import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaYoutube, FaInstagram, FaTwitter   } from "react-icons/fa";
 import "./main.css";
@@ -34,9 +35,11 @@ function Main() {
       </div>
      </section>
      <section className='gym-video'>
-     <video width="320" height="240" controls>
-      <source src="movie.mp4" type="video/mp4"/>
+     <video width="900" controls>
+      <source src={method} type="video/mp4"/>
      </video>
+     <h4>Você vai aprender métodos de treino com profissionais capacitados</h4>
+     
      </section>
      <section className="services">
       <div className='service'>
