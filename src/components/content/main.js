@@ -2,6 +2,8 @@ import React from 'react';
 import man from '../../img/man.jpeg';
 import enroll from '../../img/enroll.png';
 import method from '../../img/method.mp4';
+import avaliação from '../../img/pilates.jpg';
+import nutrição from '../../img/pilates.jpg';
 import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaYoutube, FaInstagram, FaTwitter   } from "react-icons/fa";
 import "./main.css";
@@ -43,25 +45,33 @@ function Main() {
      </section>
      <section className="services">
       <div className='service'>
-        <img src=""/>
+        <img src={nutrição}/>
        <div>
         <h2>Nutrição</h2>
-        <p>text</p>
+        <p>
+        reconhecemos a importância vital da nutrição como componente 
+        essencial do sucesso no condicionamento físico e na busca por
+        um estilo de vida saudável. Nossa abordagem à nutrição vai 
+        além de contar calorias; trata-se de fornecer orientação 
+        personalizada e conhecimento nutricional para maximizar seus
+        resultados e promover o bem-estar geral.
+        </p>
        </div>
       </div>      
       <div className='service'>
        <div>
         <h2>Avaliação</h2>
-        <p>text</p>
+        <p>
+          vamos apresentar uma abordagem revolucionária para avaliação física:
+           a Avaliação 360. Essa abordagem inovadora é projetada para 
+           fornecer aos nossos membros uma visão abrangente e detalhada de
+           sua condição física e bem-estar, abrangendo todos os aspectos 
+           que criaram para uma vida saudável. A Avaliação 360 na  é conduzida
+           por uma equipe de profissionais altamente treinados, incluindo
+           personal trainers, fisioterapeutas e nutricionistas. 
+           </p>
        </div>
-        <img src=""/>
-      </div>
-      <div className='service'>
-        <img src=""/>
-       <div>
-        <h2>pilates</h2>
-        <p>text</p>
-       </div>
+        <img src={avaliação}/>
       </div>
      </section>
      <section className="appointment">
