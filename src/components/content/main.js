@@ -75,11 +75,15 @@ function Main() {
       </div>
      </section>
      <section className="appointment">
-      <img src=""/>
+      <img src={enroll}/>
       <div class="text-appointment">
        <h3>Experimente!</h3>
-       <p>lorem10</p>
-       <Link to="appointment">Agendamento grátis</Link>
+       <p>
+        Você pode solicitar uma experiência com uma personal trailer
+        para saber como irá funcionar seus treinos e se realmente está disposto 
+        a entrar de vez nessa jornada que pode melhorar sua saúde e muito mais.
+       </p>
+       <Link className="btn-appointment" to="appointment">Agende uma experiência</Link>
       </div>
     </section>
     <footer>
