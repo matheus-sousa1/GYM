@@ -88,10 +88,10 @@ function Main() {
     </section>
     <footer>
       <div className='social-media'>
-        <FaFacebookSquare />
-        <FaYoutube/>
-        <FaInstagram/>
-        <FaTwitter/>
+        <FaFacebookSquare className="icon" />
+        <FaYoutube className="icon"/>
+        <FaInstagram className="icon"/>
+        <FaTwitter className="icon"/>
       </div>
       <h4>Todos os direitos reservados</h4>
     </footer>
