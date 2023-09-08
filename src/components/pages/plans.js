@@ -1,13 +1,14 @@
 import React from 'react';
 import { CgGym } from "react-icons/cg";
-
+import "./plans.css"
 
 
 function Plans() {
   return (
     <div className='container-plans'>
-      <CgGym/>
+      <CgGym className="icon-gym" />
       <div className='plans'>
+      <div className='plan'>
        <h2>Plano Básico</h2>
        <p>Mensalidade</p>
        <ul>
@@ -16,7 +17,7 @@ function Plans() {
        </ul>
        <button>Assine já</button>
       </div>
-      <div className='plans'>
+      <div className='plan'>
        <h2>Plano Premium</h2>
        <p>Mensalidade</p>
        <ul>
@@ -25,7 +26,7 @@ function Plans() {
        </ul>
        <button>Assine já</button>
       </div>
-      <div className='plans'>
+      <div className='plan'>
        <h2>Plano Business</h2>
        <p>Mensalidade</p>
        <ul>
@@ -34,6 +35,10 @@ function Plans() {
        </ul>
        <button>Assine já</button>
       </div>
+      </div>
+      <footer>
+      <h4>Todos os direitos reservados</h4>
+      </footer>
     </div>
   )
 }
