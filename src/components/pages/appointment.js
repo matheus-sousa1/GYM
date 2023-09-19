@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { useState } from 'react';
 import { z } from 'zod';
 import { zodResolver } from "@hookform/resolvers/zod";
+import "./appointment.css";
 
 const createUserFormSchema = z.object({
   name: z.string()
@@ -26,17 +27,24 @@ function Appointment() {
   }
 
   return (
-    <div>
-      <h1>appointment</h1> 
-      <h3>adicione seu E-mail que vamos entrar em contato com você para agendar seu atendimento</h3>
+    <div className="container-appointment">
+      <div class="content-appointment">
+      <div className='text-appointment'>
+      <div className='title-appointment'>agendamento</div> 
+      <h1>adicione seu E-mail que vamos entrar em contato com você para agendar seu atendimento</h1>
+      </div>
       <form onSubmit={handleSubmit(createUser)}>
-        <label htmlFor="">Nome</label>
-        <input type="text" {...register('name')} />
-        <label htmlFor="">E-mail</label>
-        <input type="email" {...register('email')} />
+        <label htmlFor="name">Nome</label>
+        <input id="name" type="text" {...register('name')} />
+        <label htmlFor="email">E-mail</label>
+        <input id="email" type="email" {...register('email')} />
         <button type="submit">Enviar</button>
       </form>  
       <pre>{outPut}</pre>
+      </div>
+      <footer>
+      <h4>Todos os direitos reservados</h4>
+      </footer>
     </div>
   )
 }
