@@ -1,14 +1,15 @@
 import React from 'react';
 import yoga from "../../img/yoga.jpg";
-import pilates from "../../img/pilates.jpg";
+import pilates from "../../img/pilates.png";
 import abs from "../../img/abs.jpg";
 import ritmos from "../../img/ritmos.jpg";
+import "./activities.css";
+
 function Activities() {
   return (
     <div className='content-activities'>
       <div className='text-activities'>
-      <h1>Atividades</h1>
-      <p>Conheça todas as atividades que a Gym Center oferece para você.</p>
+      <p className='initial-text'>Conheça todas as atividades que a Gym Center oferece para você.</p>
       </div>
       <div className='activities'>
        <div className='activity'>
@@ -44,6 +45,9 @@ function Activities() {
         </p>
        </div>
       </div>
+      <footer>
+      <h4>Todos os direitos reservados</h4>
+      </footer>
     </div>
   )
 }
