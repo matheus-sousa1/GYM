@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { z } from 'zod';
 import { zodResolver } from "@hookform/resolvers/zod";
 import "./appointment.css";
+import { Link } from 'react-router-dom';
 
 const createUserFormSchema = z.object({
   name: z.string()
@@ -28,6 +29,7 @@ function Appointment() {
 
   return (
     <div className="container-appointment">
+      <Link className="btn-back" to="/">voltar</Link>
       <div class="content-appointment">
       <div className='text-appointment'>
       <div className='title-appointment'>agendamento</div> 

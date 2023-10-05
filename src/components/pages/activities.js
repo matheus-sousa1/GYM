@@ -4,10 +4,12 @@ import pilates from "../../img/pilates.png";
 import abs from "../../img/abs.jpg";
 import ritmos from "../../img/ritmos.jpg";
 import "./activities.css";
+import { Link } from 'react-router-dom';
 
 function Activities() {
   return (
     <div className='content-activities'>
+      <Link className="btn-back" to="/">voltar</Link>
       <div className='text-activities'>
       <p className='initial-text'>Conheça todas as atividades que a Gym Center oferece para você.</p>
       </div>

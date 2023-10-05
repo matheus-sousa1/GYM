@@ -1,11 +1,13 @@
 import React from 'react';
 import { CgGym } from "react-icons/cg";
-import "./plans.css"
+import "./plans.css";
+import { Link } from 'react-router-dom';
 
 
 function Plans() {
   return (
     <div className='container-plans'>
+      <Link className="btn-back" to="/">voltar</Link>
       <CgGym className="icon-gym" />
       <div className='plans'>
       <div className='plan'>

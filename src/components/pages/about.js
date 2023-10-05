@@ -1,10 +1,12 @@
 import React from 'react';
 import imageAbout from '../../img/about.jpg';
 import "./about.css";
+import { Link } from 'react-router-dom';
 
 function About() {
   return (
     <div className='container-about'>
+      <Link className="btn-back" to="/">voltar</Link>
       <div className='text'>
        <h1>Sobre nós</h1>
        <p>

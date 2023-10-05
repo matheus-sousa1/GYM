@@ -22,9 +22,22 @@
  flex-direction: column;
 }
 
+.btn-back {
+  background: var(--primary);
+  color: var(--tertiary);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  font-weight: 1000;
+}
+
 .text {
   position: relative;
-  top: 14rem;
+  top: 16rem;
   right: 20rem;
   width: 35rem;
   height: 35rem;
