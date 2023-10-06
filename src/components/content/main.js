@@ -2,8 +2,9 @@ import React from 'react';
 import man from '../../img/man.jpeg';
 import enroll from '../../img/enroll.png';
 import method from '../../img/method.mp4';
-import avaliação from '../../img/pilates.png';
-import nutrição from '../../img/pilates.png';
+import avaliação from '../../img/avaliação.jpg';
+import nutrição from '../../img/nutrição.jpg';
+import tryIt from '../../img/experimente.jpg';
 import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaYoutube, FaInstagram, FaTwitter   } from "react-icons/fa";
 import "./main.css";
@@ -75,7 +76,7 @@ function Main() {
       </div>
      </section>
      <section className="appointment">
-      <img src={enroll}/>
+      <img src={tryIt}/>
       <div class="text-appointment">
        <h3>Experimente!</h3>
        <p>

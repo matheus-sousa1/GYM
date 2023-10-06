@@ -74,10 +74,10 @@ main img {
 
 .force {
   position: relative;
-  font-size: 8rem;
+  font-size: 4rem;
   color: var(--quaternary);
   z-index: 1;
-  right: 15rem;
+  right: 20rem;
   bottom: 7rem;
 }
 
@@ -195,7 +195,7 @@ p {
 }
 
 .appointment img {
-  width: 50rem;
+  width: 20rem;
 }
 
 .text-appointment {
@@ -221,10 +221,11 @@ p {
   text-align: center;
   text-decoration: none;
   padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
   width: 12rem;
   height:2rem;
-  background: var(--secondary);
-  color: var(--primary);
+  background: var(--quinary);
+  color: var(--tertiary);
   border-radius: 0.3rem;
 }
 
