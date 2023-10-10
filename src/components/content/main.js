@@ -7,12 +7,14 @@ import nutrição from '../../img/nutrição.jpg';
 import tryIt from '../../img/experimente.jpg';
 import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaYoutube, FaInstagram, FaTwitter   } from "react-icons/fa";
+import Bounce from 'react-reveal/Bounce';
 import "./main.css";
 
 function Main() {
   return (
     <div className="container">
      <main>
+      <Bounce left>
         <h2 className="info-gym">
         Bem-vindo ao Gym, uma academia que está
         comprometida em transformar o seu corpo 
@@ -24,7 +26,10 @@ function Main() {
         atingir seus objetivos de treinamento 
         físico de maneira eficaz e divertida. 
         </h2>
+        </Bounce>
+        <Bounce right>
       <img src={man} alt="man"/>
+      </Bounce>
      </main>
      <section className='enroll-content'>
      <h3 className="force">#FOCO</h3>
@@ -38,6 +43,7 @@ function Main() {
       </div>
      </section>
      <section className='gym-video'>
+     
      <video width="900" controls>
       <source src={method} type="video/mp4"/>
      </video>
@@ -45,6 +51,7 @@ function Main() {
      
      </section>
      <section className="services">
+      <Bounce left>
       <div className='service'>
         <img src={nutrição}/>
        <div>
@@ -58,7 +65,9 @@ function Main() {
         resultados e promover o bem-estar geral.
         </p>
        </div>
-      </div>      
+      </div>
+      </Bounce>     
+      <Bounce right>
       <div className='service'>
        <div>
         <h2>Avaliação</h2>
@@ -74,6 +83,7 @@ function Main() {
        </div>
         <img src={avaliação}/>
       </div>
+      </Bounce>
      </section>
      <section className="appointment">
       <img src={tryIt}/>
