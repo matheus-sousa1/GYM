@@ -27,6 +27,10 @@ function Appointment() {
    console.log(data)
   }
 
+  //<pre>{outPut}</pre>
+
+  console.log(outPut);
+
   return (
     <div className="container-appointment">
       <Link className="btn-back" to="/">voltar</Link>
@@ -42,7 +46,7 @@ function Appointment() {
         <input id="email" type="email" {...register('email')} />
         <button type="submit">Enviar</button>
       </form>  
-      <pre>{outPut}</pre>
+      
       </div>
       <footer>
       <h4>Todos os direitos reservados</h4>

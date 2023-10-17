@@ -14,7 +14,7 @@ function Main() {
   return (
     <div className="container">
      <main>
-      <Bounce left>
+      
         <h2 className="info-gym">
         Bem-vindo ao Gym, uma academia que está
         comprometida em transformar o seu corpo 
@@ -26,10 +26,9 @@ function Main() {
         atingir seus objetivos de treinamento 
         físico de maneira eficaz e divertida. 
         </h2>
-        </Bounce>
-        <Bounce right>
+        
       <img src={man} alt="man"/>
-      </Bounce>
+     
      </main>
      <section className='enroll-content'>
      <h3 className="force">#FOCO</h3>
