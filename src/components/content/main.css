@@ -257,7 +257,7 @@ footer {
 
 /* responsividade */
 
-@media  (max-width: 1280px){
+@media  (max-width: 1200px){
   main img {
     width: 15rem;
     bottom: 0.4rem;
@@ -288,7 +288,7 @@ footer {
 }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 992px) {
   main img {
     width: 12rem;
     right: 2rem;
@@ -302,7 +302,7 @@ footer {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 768px) {
   main {
     gap: 0 4rem;
   }
@@ -319,7 +319,7 @@ footer {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 600px) {
   main {
     gap: 2rem;
     height: 90vh;
