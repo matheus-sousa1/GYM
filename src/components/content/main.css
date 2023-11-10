@@ -153,6 +153,8 @@ p {
   background: var(--secondary);
   display: block;
   gap: 2rem 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .service {
@@ -286,6 +288,18 @@ footer {
   left: 26rem;
   bottom: 17rem;
 }
+.service img {
+  width: 7rem;
+}
+.service {
+  left: 4rem;
+  width: 50rem;
+  gap: 0rem 2rem;
+}
+.service div {
+  width: 30rem;
+  padding: 0;
+}
 }
 
 @media (max-width: 992px) {
@@ -300,6 +314,28 @@ footer {
     height: 16rem;
     font-size: 1rem;
   }
+
+  video {
+    width: 650px;
+  }
+  .gym-video h4 {
+    font-size: 1.4rem;
+  }
+  .service {
+    width: 45rem;
+    left: 0;
+  }
+  .appointment img {
+    width: 14rem;
+    margin-left: 2rem;
+  }
+  .text-appointment {
+    width: 25rem;
+  }
+  .text-appointment h3 {
+   font-size: 2.5rem;
+  }
+  
 }
 
 @media (max-width: 768px) {
@@ -317,6 +353,48 @@ footer {
     width: 17rem;
     height: 20rem;
   }
+  .enroll {
+    width: 39rem;
+    height: 30rem;
+  }
+  .enroll-text {
+    width: 12rem;
+    height: 10rem;
+    bottom: 20rem;
+  }
+  .enroll-text h5 {
+    font-size: 2rem;
+  }
+  .button-enroll {
+    font-size: 1rem;
+    padding: 0.2rem 0.3rem;
+  }
+  video {
+   width: 500px;
+  }
+  .gym-video h4 {
+    font-size: 1rem;
+  }
+  .services {
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .service {
+    left: 2rem;
+    width: 35rem;
+  }
+  .service h2 {
+    font-size: 1.5rem;
+  }
+  .service p {
+   font-size: 1rem;
+  }
+  .service div {
+    width: 24rem;
+  }
+  .appointment img {
+    width: 9rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -333,4 +411,35 @@ footer {
   height: 12rem;
   font-size: 0.5rem;
  }
+ .enroll {
+  width: 25rem;
+  height: 36rem;
+}
+.enroll img {
+  right: 0rem;
+  width: 22rem;
+  top: 8rem;
+}
+.force {
+  font-size: 3rem;
+  right: 0rem;
+  bottom: 12rem;
+}
+.enroll-text {
+  width: 18rem;
+  height: 12rem;
+  left: 3rem;
+  bottom: 0rem;
+  top: 5.1rem;
+  z-index: 2;
+}
+.enroll img {
+  z-index: 1;
+}
+video {
+  width: 450px;
+}
+.service {
+  width: 27rem;
+}
 }
