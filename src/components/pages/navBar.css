@@ -2,6 +2,8 @@
   --primary: #ff4800;
   --second: #302f2f;
   --tertiary: #fff;
+  --quaternary: #5c5a5a;
+  --quinary: #000000;
 }
 
 header {
@@ -13,6 +15,49 @@ header {
   background: linear-gradient(to left, var(--primary)5%, var(--second));
   gap: 0 30rem;
 }
+
+.dropdown {
+  background-color:var(--quinary);
+  padding: 1em 0;
+  position: absolute; 
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+ }
+
+ .dropdown Link + Link {
+  margin-top: 10px;
+ }
+
+ .dropdown Link {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+ }
+  .dropdown Link:hover {
+  background-color:var(--quinary);
+ }
+
+ .dropdown {
+  display: none;
+ }
+
+ input[type=checkbox]{
+  display: none;
+ } 
+ /*HAMBURGER MENU*/
+  .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  color: var(--tertiary);
+ }
+
+ .hamburger:hover{
+  cursor: pointer;
+  color:var(--second);
+ }
+
 
 h1 {
   font-weight: 1000;
@@ -44,3 +89,73 @@ nav {
   color: var(--second);
   transition: 0.5s;
 }
+
+@media (max-width:1200px) {
+  header {
+    gap: 0 10rem;
+  }
+  .link {
+    width: 8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    gap: 0 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    gap: 0 4rem;
+  }
+  nav {
+    display: none;
+  }
+  input[type=checkbox]:checked ~ nav{
+    display: flex;
+    flex-direction: column;
+   }
+   .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   
+   .dropdown Link:hover {
+    background-color: var(--tertiary);
+  }
+
+  nav{
+    margin-left: 180px;
+    width: 220px;
+    font-size: 1rem;
+    position: absolute;
+    top: 3rem;
+    left: 8rem;
+  }
+  nav { 
+    display:none;
+    position: absolute;
+    background-color: var(--quinary);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 35px;
+    margin-left: 150px;
+    border-radius: 1rem;
+   }
+   nav Link:hover {
+    display: inline-block;
+    background-color:var(--tertiary);
+    transition: 0.3s ease;
+   }
+   nav Link + Link {
+    margin-top: 20px;
+   }
+  
+  }
