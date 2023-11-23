@@ -14,7 +14,7 @@
 
 .container-about {
  width: 100%;
- height: 100vh;
+ min-height: 100vh;
  background: var(--quinary);
  display: flex;
  justify-content: center;
@@ -54,9 +54,70 @@
 }
 
 .container-about footer {
-  position: relative;
-  bottom: 5rem;
   width: 100%;
   height: 15vh;
   padding: 2rem 0rem;
+}
+
+@media (max-width:1200px) {
+  .text {
+    width: 30rem;
+    height: 30rem;
+    right: 15rem;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+  .container-about img {
+    width: 16rem;
+    bottom: 7rem;
+    left: 16rem;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .text {
+    width: 28rem;
+    height: 28rem;
+    right: 13rem;
+  }
+  .text h1 {
+    font-size: 1.5rem;
+  }
+
+  .container-about img {
+    bottom: 7rem;
+    width: 14rem;
+    left: 14rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    padding: 1rem;
+    right: 7.5rem;
+    top: 10rem;
+    height: 25rem;
+    width: 23rem;
+  }
+  .container-about img {
+    width: 11rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .text {
+   top: 0rem;
+   right: 0rem;
+   margin-top: 8rem;
+   height: 20rem;
+   width: 28rem;
+  }
+  .container-about img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    left: 0rem;
+    bottom: 0rem;
+  }
 }

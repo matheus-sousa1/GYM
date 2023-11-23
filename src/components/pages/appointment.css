@@ -50,7 +50,6 @@
   height: 19rem;
   background: var(--primary);
   border-radius: 45% 34% 67% 27%;
-  border: 1px solid blue;
 }
 
 .text-appointment h1 {
@@ -99,7 +98,6 @@
     width: 100%;
     height: 100rem;
     gap: 6rem 0;
-    border: 1px solid red;
   }
   .container-appointment form {
     width: 18rem;
